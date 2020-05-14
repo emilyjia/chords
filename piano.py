@@ -58,8 +58,10 @@ class Piano:
             chords.sort()
             return chords
 
-    def get_key_from_chords(self, chords):
+    def get_major_key_from_chords(self, chords):
         key_frequencies = Counter()
+        vi_count = 0
+        I_count = 0
         for chord in chords:
             chord_major_keys = self.chord_to_major_key(chord)
             for key in chord_major_keys:
@@ -90,5 +92,9 @@ class Ukutabs():
         soup = BeautifulSoup(response.text, features = "lxml")
         chords = [x["name"] for x in soup.select(".hoverchord")]
         return chords
+
+class UltimateGuitar():
+    def __init__(self):
+        pass
 
 
