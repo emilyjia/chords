@@ -1,13 +1,13 @@
-# chords project
+# Chords project
 
 Given a spotify username and playlist name, returns the chord progressions for songs in the playlist.
 
-## inspo
+## Inspiration
 
-I've been playing a lot of ukulele to keep me sane during my job search. Many of my favorite songs use similar chord progressions. I wondered what the true distribution of chord progressions was across my playlists. 
+I've been playing a lot of ukulele to keep me sane during my job search. Many of my favorite songs use similar chord progressions. I wondered what the true distribution of chord progressions was across my playlists.
 
-## example
-I've made a test playlist with two of my favorite songs: Riptide (Vance Joy) and Stacy (Quinn XCII). I found my username from my spotify profile URL. Let's look at the first five chords in every song. 
+## Example
+I've made a test playlist with two of my favorite songs: Riptide (Vance Joy) and Stacy (Quinn XCII). I found my username from my spotify profile URL. Let's look at the first five chords in every song.
 
 __Input__
 ```python
@@ -42,13 +42,13 @@ __Output__
 (['Riptide', 'Stacy'], ['I/V/vi', 'I/IV/V/vi'])
 ```
 
-## todo
+## Todo
 
 - Add examples
 - Add major/minor key identifier. Current guesser identifies the major key, so the chord numbers look wonky for minor songs.
-- Improve pattern detection. Songs commonly have multiple chord progressions of varying lengths. I currently assume that the progression does not have repeat chords (e.g. I would miss I/I/IV/V) and has fixed length. 
+- Improve pattern detection. Songs commonly have multiple chord progressions of varying lengths. I currently assume that the progression does not have repeat chords (e.g. I would miss I/I/IV/V) and has fixed length.
 - More chord information (e.g. currently read Asus9 as A)
-- Playlist creation 
+- Playlist creation
 
 
 
